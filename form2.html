@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+	<h1 align="center">Регистрация</h1>
+	<form>
+		<h2>Данные о себе</h2>
+		<input type="text" name="ferstname" placeholder="Введите ваше имя" required><br><br>
+		<input type="text" name="surname" placeholder="Введите вашу фамилию" required><br>
+		<p>Ваш пол</p>
+		<input type="radio" name="who" value="man">
+		<b>Мужчина</b>
+		<input type="radio" name="who" value="woman">
+		<b>Женщина</b><br>
+		<input type="radio" name="who" value="orc">
+		<b>Орк</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+		<input type="radio" name="who" value="dark elf">
+		<b>Ночной ельф</b>
+		<h2>Какие моющие вам необходимы</h2>
+		<b>Щелочные</b><input type="checkbox" name="as" value="caustic">
+		<b>Кислотные</b><input type="checkbox" name="as" value="acid">
+		<b>Дезинфектанты</b><input type="checkbox" name="as" value="disinfection">
+		<b>Нейтральные</b><input type="checkbox" name="as" value="neutral"><br>
+		<h2>Загрузите уставные документы вашей компании</h2>
+		<input type="file" name="file" multiple>
+		<h2>Напишите о вашей компании</h2>
+		<textarea name="company" placeholder="пару слов о вашей компании" cols="40" rows="10">
+		</textarea>
+		<h2>Выберите ваш город</h2>
+		<select name="city">
+			<optgroup label="region">
+				<option value="dnipro">dnepr</option>
+				<option value="kiev" selected="">kiev</option>
+				<option value="odessa">odessa</option>
+			</optgroup>
+		</select>
+		<br><br>
+		<input type="submit" name="first submit" value="Go On server" disabled>
+		<input type="reset" value="reset">
+	</form>
